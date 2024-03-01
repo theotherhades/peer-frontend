@@ -1,0 +1,243 @@
+@font-face {
+    font-family: mukta;
+    src: url(./Mukta/Mukta-Regular.ttf);
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: mukta;
+    src: url(./Mukta/Mukta-ExtraBold.ttf);
+    font-weight: bold;
+    font-display: swap;
+}
+
+:root {
+    font-family: mukta;
+    --bg: #1F2847;
+    --btn: #3562FF;
+    --btn-secondary: #5F6A92;
+    --btn-hover: #2646B9;
+    --btn-secondary-hover: #4B5475;
+    --btn-active: #1f378f;
+    --btn-secondary-active: #373e54;
+    --input-color: #131726;
+    --input-color-hover: #060913;
+    --text-color: #CECECE;
+    --white: white;
+    --link-color: #1092CA;
+    --link-hover-color: #5dceff;
+    --sidebar-link: #8991b3;
+    --danger: #b02734;
+    --danger-hover: #941e29;
+    --danger-active: #b83d49;
+}
+body {
+    background: var(--bg);
+}
+
+.pfp {
+    float: left;
+    margin: 0 15px 0 0;
+    width: 36px;
+    height: 35px;
+}
+.pfp-profilepage {
+    float: left;
+    margin: 0 15px 0 0;
+    width: 46px;
+    height: 45px;
+}
+
+#landing {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+#landing p {
+    color: var(--text-color);
+    text-align: center;
+    /*font-size: 1.4em;*/
+    margin: 0;
+    line-height: 100%;
+}
+#landing strong {
+    color: var(--white);
+}
+#landing h1 {
+    font-size: 5em;
+    color: var(--white);
+    margin: 0;
+    line-height: 100%;
+    transform: translate(-5%);
+}
+#landing img {
+    /* thanks https://github.com/twitter/twemoji#inline-styles */
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.2em;
+}
+
+#main .text {
+    color: var(--text-color);
+}
+
+#main-home {
+    margin-left: 120px;
+    margin-top: 40px;
+}
+#main-home .text {
+    color: var(--text-color);
+}
+#main-home h1 {
+    color: var(--white);
+    margin-bottom: 0;
+}
+#main-home h3 {
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+.btn button {
+    font-family: mukta;
+    border: 0px;
+    border-radius: 6px;
+    background-color: var(--btn);
+    color: var(--white);
+    padding: 3px 12px;
+    line-height: 160%;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+}
+.btn button:hover {
+    background-color: var(--btn-hover);
+}
+.btn button:active {
+    background-color: var(--btn-active);
+}
+
+.btn-secondary button {
+    font-family: mukta;
+    border: 0px;
+    border-radius: 6px;
+    background-color: var(--btn-secondary);
+    color: var(--white);
+    padding: 3px 12px;
+    line-height: 160%;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+}
+.btn-secondary button:hover {
+    background-color: var(--btn-secondary-hover);
+}
+.btn-secondary button:active {
+    background-color: var(--btn-secondary-active);
+}
+
+input[type="submit"] {
+    background-color: var(--btn);
+    color: var(--white);
+    border: 0px;
+    display: inline-block;
+    font-family: mukta;
+    font-size: .8em;
+    border-radius: 5px;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: var(--btn-hover);
+}
+input[type="submit"]:active {
+    background-color: var(--btn-active);
+}
+input[type="submit"].btn-secondary {
+    background-color: var(--btn-secondary);
+}
+input[type="submit"].btn-secondary:hover {
+    background-color: var(--btn-secondary-hover);
+}
+input[type="submit"].btn-secondary:active {
+    background-color: var(--btn-secondary-active);
+}
+input[type="text"] {
+    background-color: var(--input-color);
+    color: var(--white);
+    border: 0px;
+    display: inline-block;
+    font-family: mukta;
+    font-size: .8em;
+    border-radius: 5px;
+    padding: 2px 8px;
+    outline: none;
+}
+input[type="text"]:hover {
+    background-color: var(--input-color-hover);
+}
+input[type="password"] {
+    background-color: var(--input-color);
+    color: var(--white);
+    border: 0px;
+    display: inline-block;
+    font-family: mukta;
+    font-size: .8em;
+    border-radius: 5px;
+    padding: 2px 8px;
+    outline: none;
+}
+input[type="password"]:hover {
+    background-color: var(--input-color-hover);
+}
+input[type="submit"].input-button-secondary {
+    background-color: var(--btn-secondary);
+}
+input[type="submit"].input-button-secondary:hover {
+    background-color: var(--btn-secondary-hover);
+}
+input[type="submit"].input-button-secondary:active {
+    background-color: var(--btn-secondary-active);
+}
+input[type="submit"].input-button-danger {
+    background-color: var(--danger);
+}
+input[type="submit"].input-button-danger:hover {
+    background-color: var(--danger-hover);
+}
+input[type="submit"].input-button-danger:active {
+    background-color: var(--danger-active);
+}
+
+p {
+    font-weight: normal;
+}
+strong {
+    font-weight: bold;
+}
+h1 {
+    font-weight: bold;
+}
+.text p {
+    margin-top: 10px;
+    line-height: 110%;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--link-hover-color);
+}
+
+.icon-info {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.2em;
+    fill: var(--text-color);
+}
